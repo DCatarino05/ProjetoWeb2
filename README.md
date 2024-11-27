@@ -1,5 +1,6 @@
 # ProjetoWeb2
 Cinema NOSSO
+David Catarino e Afonso Alves
 
 Para Users
 Visualização de Filmes:
