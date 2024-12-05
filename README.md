@@ -20,5 +20,5 @@ Gestão de sessões
 Gestão de roles de users
 
 
-link do site: cinemasnosso.infinityfreeapp.com
+link do site: http://cinemasnosso.infinityfreeapp.com
 
