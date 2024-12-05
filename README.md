@@ -6,6 +6,7 @@ Para Users
 Visualização de Filmes:
 
 Lista de filmes em cartaz.
+Pesquisa por filme
 Filtro por categoria.
 Reserva de Bilhetes
 
