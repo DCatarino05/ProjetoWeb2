@@ -1,0 +1,214 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    background-color: #1E1F27;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #000;
+    padding: 1% 0;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p a {
+    color: #f9c800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Header ========== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #f9c800;
+    color: #1E1F27;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    margin-right: 9px;
+    font-size: 21px;
+    line-height: 25.2px;
+}
+
+.titulo-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #1E1F27;
+    margin-top: 2px;
+    margin-right: 9px;
+    font-size: 21px;
+    line-height: 25.2px;
+    text-decoration: none;
+}
+
+.logonosso {
+    width: auto;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #000000;
+}
+
+.btn-logout {
+    color: #fff;
+    background-color: #f44336;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    padding: 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.filme, .sala {
+    flex: 1;
+}
+
+.poster {
+    max-width: 100%;
+    height: auto;
+}
+
+.dentosala {
+    width: 100%;
+    align-items: center;
+}
+
+.tela-de-cinema {
+    width: 25%;
+    height: 40px;
+    background: linear-gradient(to bottom, #e0e0e0, #c0c0c0);
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.filas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.fila {
+    display: flex;
+    gap: 5px;
+}
+
+/* Lugares disponíveis */
+.lugar.disponivel input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.lugar.disponivel input[type="checkbox"]:hover {
+    transform: scale(1.1);
+}
+
+.lugar.disponivel input[type="checkbox"]:checked {
+    background-color: #f9c800;
+    border-color: #000;
+    transform: scale(1.1);
+}
+
+/* Lugares reservados */
+.lugar.reservado {
+    background-color: #6d6d6d;
+    border: 2px solid #808080;
+    cursor: not-allowed;
+    pointer-events: none; /* Remove qualquer interação */
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.lugar.reservado input[type="checkbox"] {
+    display: none; /* Esconde o checkbox completamente */
+}
+
+/* Botão de confirmar reserva */
+.btn-confirm {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    width: 30%;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-confirm:hover {
+    background-color: #f9c800;
+}
