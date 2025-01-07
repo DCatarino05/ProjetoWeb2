@@ -1,0 +1,188 @@
+/* ========== Geral ========== */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      background-color: #1E1F27;
+      color: #ffffff;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; 
+      margin: 0;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0px; 
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #000;
+    padding: 1% 0;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: auto; 
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer p a {
+    color: #f9c800;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ========== Header ========== */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #f9c800;
+    color: #1E1F27;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .logo h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    margin-right: 9px;
+    font-size: 21px;
+    line-height: 25.2px;
+  }
+  
+  .titulo-logo {
+    display: flex
+  ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #1E1F27;
+    margin-top: 2px;
+    margin-right: 9px;
+    font-size: 21px;
+    line-height: 25.2px;
+    text-decoration: none;
+  }
+  
+  .titulo-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #1E1F27;
+    margin-top: 2px;
+    margin-right: 9px;
+    font-size: 21px;
+    line-height: 25.2px;
+    text-decoration: none;
+  }
+  
+  .logonosso {
+    width: auto;
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #000000;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search input {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #EDC706;
+    color: #1E1F27;
+    width: 300px;
+    font-size: 16px;
+  }
+  
+  .search input::placeholder {
+    color: #1E1F27;
+  }
+  
+  .search button {
+    background-color: #f9c800;
+    color: #1E1F27;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .search button:hover {
+    color: #1E1F27;
+  }
+
+
+
+  .container {
+  padding: 2%;
+}
+
+.reservas{
+    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reserva {
+  background-color: #2c2f38; 
+  overflow: hidden; 
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombrinha suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.reserva:hover {
+  transform: translateY(-5px); /* Efeito de levitação ao passar o mouse */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombrinha mais forte ao passar o mouse */
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #444; /* Linha para separar a imagem do conteúdo */
+}
+
+
