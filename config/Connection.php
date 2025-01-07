@@ -7,19 +7,21 @@ class Connection
     {
         if (self::$instance === null) {
             try {
-                // Substitua os parâmetros abaixo pelos dados fornecidos pelo servidor remoto
-                $host = 'sql207.infinityfree.com'; // Verifique o hostname correto
-                $dbname = 'if0_37857865_cinemasnosso';
-                $user = 'if0_37857865'; // Substitua pelo seu nome de usuário
-                $password = '57e1HKRVlNP8l '; // Substitua pela sua senha
+                // Parâmetros da conexão
+                $host = 'sql207.infinityfree.com'; // Hostname do servidor MySQL
+                $dbname = 'if0_37857865_cinemasnosso'; // Nome do banco de dados
+                $user = 'if0_37857865'; // Nome de usuário
+                $password = '57e1HKRVlNP8l'; // Senha do banco de dados
+                $port = 3306; // Porta do MySQL (opcional)
 
+                // Criar instância PDO
                 self::$instance = new PDO(
-                    "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+                    "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4",
                     $user,
                     $password,
                     [
-                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
-                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC 
+                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                     ]
                 );
             } catch (PDOException $e) {
