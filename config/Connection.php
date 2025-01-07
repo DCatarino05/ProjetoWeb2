@@ -8,7 +8,7 @@ class Connection
         if (self::$instance === null) {
             try {
                 // Substitua os parâmetros abaixo pelos dados fornecidos pelo servidor remoto
-                $host = 'mysql.php-myadmin.net'; // Verifique o hostname correto
+                $host = 'sql207.infinityfree.com'; // Verifique o hostname correto
                 $dbname = 'if0_37857865_cinemasnosso';
                 $user = 'if0_37857865'; // Substitua pelo seu nome de usuário
                 $password = '57e1HKRVlNP8l '; // Substitua pela sua senha
