@@ -32,6 +32,8 @@ if ($controller === 'Filme') {
         $filmeController->filtrar(); 
     }elseif ($action === 'comprar') {
         $filmeController->comprar();
+    }elseif ($action === 'processarReserva') {
+        $filmeController->processarReserva();
     }
 } elseif ($controller === 'Sala') {
     $salaController = new SalaController();
@@ -80,6 +82,8 @@ if ($controller === 'Filme') {
         $userController->editar();
     } elseif ($action === 'excluir') {
         $userController->excluir();
+    }elseif ($action === 'perfil') {
+        $userController->perfil();
     }
 } else {
     // Caso o controller não exista, redirecione para uma página de erro ou home
